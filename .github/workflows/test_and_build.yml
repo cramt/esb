@@ -21,6 +21,7 @@ jobs:
       - run: cargo test
   build:
     runs-on: "ubuntu-20.04"
+    needs: [test]
     permissions:
       contents: read
       packages: write
